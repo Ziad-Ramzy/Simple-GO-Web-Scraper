@@ -22,7 +22,7 @@ func main() {
         book := Book{}
         book.Url = e.ChildAttr("a", "href")
         book.Image = e.ChildAttr("img", "src")
-        book.Name = e.ChildText("h2.title")
+        book.Name = e.ChildText("h2")
         book.Price = e.ChildText(".woocommerce-Price-amount.amount")
 
         books = append(books, book)
